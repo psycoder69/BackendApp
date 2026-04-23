@@ -8,6 +8,10 @@ app.get("/", (req, res) => {
     res.json({ "message": "Hello from the backend app!" });
 });
 
+app.get("/home", (req, res) => {
+    res.json({ "message": "Hello from my home route "});
+});
+
 app.listen(PORT, () => {
     console.log(`Server started on http://localhost:${PORT}/`);
 });
