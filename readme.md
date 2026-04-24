@@ -4,3 +4,8 @@ you'll pull your code from github to your ec2 instance
 and then you'll start your backend app again
 
 10 times -> 10 times manually
+
+local repo -> (pushed) -> github repo
+githup repo -> (pulled) -> ec2 repo
+
+pm2 reload all
