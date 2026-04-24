@@ -12,6 +12,10 @@ app.get("/home", (req, res) => {
     res.json({ "message": "Hello from my home route "});
 });
 
+app.get("/about", (req, res) => {
+    res.send("This is an about page");
+});
+
 app.listen(PORT, () => {
     console.log(`Server started on http://localhost:${PORT}/`);
 });
