@@ -16,7 +16,7 @@ app.get("/about", (req, res) => {
     res.send("This is an about page");
 });
 
-app.get("contact-us", (req, res) => {
+app.get("/contact-us", (req, res) => {
     res.send("This is my contact-us page. You can contact us at anshu.singh.dev.official@gmail.com");
 });
 
