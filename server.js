@@ -48,6 +48,10 @@ app.get("/hook", (req, res) => {
     res.json({"message": "hook route message here!"});
 });
 
+app.get("/speak", (req, res) => {
+    res.json({"message": "speak up server!"});
+});
+
 app.listen(PORT, () => {
     console.log(`Server started on http://localhost:${PORT}/`);
 });
