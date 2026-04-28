@@ -20,9 +20,13 @@ app.get("/contact-us", (req, res) => {
     res.send("This is my contact-us page. You can contact us at anshu.singh.dev.official@gmail.com");
 });
 
-app.get("/health", () => {
+app.get("/health", (req, res) => {
     res.send("<h3>Health check: Looks Good</h3>");
 });
+
+app.get("/check", (req, res) => {
+    res.send("<h3>Checking 123</h3>");
+})
 
 app.listen(PORT, () => {
     console.log(`Server started on http://localhost:${PORT}/`);
