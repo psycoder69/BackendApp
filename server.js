@@ -32,6 +32,10 @@ app.get("/welcome", (req, res) => {
     res.send("<h3>Welcome to my server!</h3>");
 });
 
+app.get("/info", (req, res) => {
+    res.json({"message": "/info route"});
+});
+
 app.listen(PORT, () => {
     console.log(`Server started on http://localhost:${PORT}/`);
 });
