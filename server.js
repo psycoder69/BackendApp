@@ -33,7 +33,7 @@ app.get("/welcome", (req, res) => {
 });
 
 app.get("/info", (req, res) => {
-    res.json({"message": "/info route"});
+    res.json({"message": "/info route message"});
 });
 
 app.listen(PORT, () => {
