@@ -41,7 +41,7 @@ app.get("/poll", (req, res) => {
 });
 
 app.get("/test", (req, res) => {
-    res.json({"message": "testing test route"});
+    res.json({"message": "testing test route message"});
 });
 
 app.get("/hook", (req, res) => {
