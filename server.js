@@ -26,7 +26,11 @@ app.get("/health", (req, res) => {
 
 app.get("/check", (req, res) => {
     res.send("<h3>Checking 123</h3>");
-})
+});
+
+app.get("/welcome", (req, res) => {
+    res.send("<h3>Welcome to my server!</h3>");
+});
 
 app.listen(PORT, () => {
     console.log(`Server started on http://localhost:${PORT}/`);
