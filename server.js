@@ -52,6 +52,10 @@ app.get("/speak", (req, res) => {
     res.json({"message": "speak up server!"});
 });
 
+app.get("/demo", (req, res) => {
+    res.send("This is my demo route");
+});
+
 app.listen(PORT, () => {
     console.log(`Server started on http://localhost:${PORT}/`);
 });
