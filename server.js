@@ -36,6 +36,10 @@ app.get("/info", (req, res) => {
     res.json({"message": "/info route message"});
 });
 
+app.get("/poll", (req, res) => {
+    res.json({"message": "polling ..."});
+});
+
 app.listen(PORT, () => {
     console.log(`Server started on http://localhost:${PORT}/`);
 });
