@@ -44,6 +44,10 @@ app.get("/test", (req, res) => {
     res.json({"message": "testing test route"});
 });
 
+app.get("/hook", (req, res) => {
+    res.json({"message": "hook route here!"});
+})
+
 app.listen(PORT, () => {
     console.log(`Server started on http://localhost:${PORT}/`);
 });
