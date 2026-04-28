@@ -40,6 +40,10 @@ app.get("/poll", (req, res) => {
     res.json({"message": "polling ..."});
 });
 
+app.get("/test", (req, res) => {
+    res.json({"message": "testing test route"});
+});
+
 app.listen(PORT, () => {
     console.log(`Server started on http://localhost:${PORT}/`);
 });
